@@ -22,7 +22,7 @@ app.post('/upload', upload.single('upload'), (req, res) => {
 // const token = async () => jwt.sign({ _id: "123" }, "this is my new course") ;
 // console.log(token()) 
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT; 
 
 
 // const main = async () => {
