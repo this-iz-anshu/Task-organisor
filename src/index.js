@@ -10,10 +10,10 @@ app.use(express.json());
 app.use(UserRouter);
 app.use(taskRouter);
 
+console.log(process.env.PORT);
 
-
-app.listen(port, () => {
-    console.log('server is up on port' + process.env.PORT);
-})
+app.listen(process.env.PORT, () => {
+	console.log("server is up on port" + process.env.PORT);
+});
 
 

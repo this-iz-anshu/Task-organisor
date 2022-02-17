@@ -3,8 +3,7 @@ const sendGrid = require('@sendgrid/mail');
 const sendGridApi = process.env.SENDGRID_API_KEY
 
 sendGrid.setApiKey(sendGridApi);
-console.log(sendGridApi)
-console.log(process.env.PORT);
+
 
 
 const welcomeMessage = (name,mail) => {
